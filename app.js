@@ -31,3 +31,9 @@ const catDog = {...feline, ...canine};
 // canine, because it comes second.
 // if we want to customize it...
 // const catDog = {...feline, ...canine, family: 'Mills'}
+
+// rest
+
+function sum(...nums) {
+    return nums.reduce((total, num) => total += num);
+}
