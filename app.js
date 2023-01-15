@@ -37,3 +37,29 @@ const catDog = {...feline, ...canine};
 function sum(...nums) {
     return nums.reduce((total, num) => total += num);
 }
+
+// i stole this from an AI
+const randomInts = [...Array(5)].map(() => Math.floor(Math.random() * 10));
+
+const [firstNumber, secondNumber, ...theRestOfTheNumbers] = randomInts;
+
+const arr = [1, 2, 3, 4];
+
+// destructuring
+let [first, second, third, fourth] = arr;
+
+console.log(first); // 1
+console.log(second); // 2
+console.log(third); // 3
+console.log(fourth); // 4
+
+// rest syntax
+// const arr = [1, 2, 3, 4, 5, 6];
+
+// let [first, second, ...rest] = arr;
+
+// console.log(first); // 1
+// console.log(second); // 2
+// console.log(rest); // [3, 4, 5, 6]
+
+
